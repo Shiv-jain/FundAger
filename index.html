@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>FundAger</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="navbar">
+                <a href="#">
+                    <img src="img/Logo.png" alt="Logo">
+                </a>
+                <ul>
+                    <li><a href="#features"> Features</a></li>
+                    <li><a href="#contact"> Contact Us </a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main">
+            <div>
+                <h1>
+                    Manage Money <br>
+                    Like a <span> PRO! </span>
+                </h1>
+                <p>Fundager helps students to manage their money is a effective way which helps them to design a good
+                    budget and stick to it.</p>
+                <a href="#" class="cta" onclick="openForm()">
+                    Get Started <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+                </a>
+            </div>
+            <img src="img/Illustration-2.png" alt="Student Making Budget">
+        </div>
+    </header>
+    <section id="features" class="features">
+        <h2> Features </h2>
+        <div class="main">
+
+            <div class="card">
+                <ion-icon name="cash"></ion-icon>
+                <h3>Saves Time and Money</h3>
+            </div>
+
+            <div class="card">
+                <ion-icon name="key"></ion-icon>
+                <h3> Data is Completely Secure </h3>
+            </div>
+
+            <div class="card">
+                <ion-icon name="alarm"></ion-icon>
+                <h3> Budget Reminders </h3>
+            </div>
+
+            <div class="card">
+                <ion-icon name="bar-chart"></ion-icon>
+                <h3> Financial Growth </h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact"> 
+            <h2>
+                Contact Us
+            </h2>
+            <div class="flex">
+                <img src="img/Illustration-3.png" alt="Contact Us">
+            <div>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="E-mail">
+                <textarea name="message" cols="30" rows="4" placeholder="Message"></textarea>
+                <a href="#"> Submit </a>
+            </div>
+            </div>
+    </section>
+
+    <form id="myForm">
+        <button onclick="closeForm()"> <ion-icon name="close-circle"></ion-icon> </button>
+        <div>
+            <input type="text" id="s_name" name="s_name" placeholder="Name">
+            <input type="number" id="s_age" name="A" placeholder="Age">
+            <input type="number" id="s_mno" name="s_mno" placeholder="Mobile Number">
+            <input type="number" id="s_mb" name="s_mb" placeholder="Monthly Budget(Rs)">
+            <input type="number" id="s_food" name="s_food" placeholder="Food Share(Rs)">
+            <input type="number" id="s_acc" name="s_acc" placeholder="Accomodation(Rs)">
+            <input type="number" id="s_enjoy" name="s_enjoy" placeholder="Enjoyment(Rs)">
+            <input type="number" id="s_study" name="s_study" placeholder="Study Share(Rs)">
+            <input type="number" id="s_save" name="s_save" placeholder="Saving/Month(Rs)">
+            <a href="dashboard.html"> Submit </a>
+        </div>
+    </form>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
